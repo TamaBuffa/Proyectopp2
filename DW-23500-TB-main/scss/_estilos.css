@@ -1,0 +1,772 @@
+@charset "UTF-8";
+/* VARIABLES*/
+/*Mixins*/
+body {
+  background-color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+/*_______________________*/
+/*MENU*/
+.nav-item {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: white;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.nav-item:hover:before {
+  left: 0;
+  right: 0;
+}
+
+.nav-item:focus:before {
+  left: 0;
+  right: 0;
+}
+
+.nav-item:active:before {
+  left: 0;
+  right: 0;
+}
+
+/*_______________________*/
+/*INDEX*/
+/*Imagen ppal*/
+.container-fluid1 {
+  width: 100%;
+}
+
+/*__________________________*/
+/*Carrousel 1 T-SHIRT titulo-subtitulo */
+.container-fluid2__titulo {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.container-fluid2__subt {
+  font-size: 20px;
+  margin-left: 2px;
+  font-weight: 700;
+  text-align: center;
+  color: #97858D;
+}
+
+/*Carrousel 1 T-SHIRT tamaños */
+.container-fluid2-1 {
+  width: 120%;
+}
+
+.container-fluid2-1__slide {
+  width: 100%;
+}
+
+.container-fluid2-1.control-next-icon {
+  background-color: tomato;
+}
+
+.container-fluid2-1.control-prev-icon {
+  background-color: tomato;
+}
+
+/*Carrousel 1 T-SHIRT tamaños */
+.container-fluid2-1 {
+  width: 120%;
+}
+
+.container-fluid2-1__slide {
+  width: 100%;
+}
+
+.container-fluid2-1.control-next-icon {
+  background-color: tomato;
+}
+
+.container-fluid2-1.control-prev-icon {
+  background-color: tomato;
+}
+
+/*__________________________*/
+/*Shop online */
+.container-fluid2-2 {
+  width: 50%;
+  text-align: center;
+}
+
+.container-fluid2-3 {
+  width: 190%;
+}
+
+.container-fluid2-3__titulo {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+.container-fluid2-3__img {
+  width: 90px;
+  height: 90px;
+}
+
+.container-fluid2-3__img__img.icono {
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
+}
+
+.container-fluid2-3__img__img.icono:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*__________________________*/
+/*Imagen+boton compra*/
+.container-fluid2-4 {
+  width: 100%;
+}
+
+.container-fluid2-4__img4 {
+  margin-top: 50px;
+  height: 280px;
+  width: 430px;
+}
+
+.container-fluid2-4__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 6px 19px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 40px;
+  font-weight: 200;
+  margin-left: 300px;
+}
+
+.container-fluid2-4__btn-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.container-fluid2-4__btn:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.container-fluid2-4__btn-grow:focus {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.container-fluid2-4__btn-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.container-fluid2-4 a:hover {
+  text-decoration: none;
+  color: #f5f5f5 !important;
+}
+
+/*__________________________*/
+/*Cartelofertas*/
+.container-fluid3 {
+  width: 100%;
+}
+
+.container-fluid3__img {
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/*__________________________*/
+/*Carrousel2-img*/
+.container-fluid4 {
+  width: 100%;
+}
+
+.container-fluid4__slide {
+  width: 100%;
+}
+
+/*__________________________*/
+/*Titulo/Parrafo*/
+.container-fluid5 {
+  width: 50%;
+}
+
+.container-fluid5-1 {
+  width: 200%;
+}
+
+.container-fluid5-1__titulo1 {
+  font-size: 77px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 130px;
+}
+
+.container-fluid5-1__titulo2 {
+  font-size: 30px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 5px;
+  margin-top: 160px;
+  margin-left: 30px;
+}
+
+.container-fluid5-1__parrafo {
+  font-size: 20px;
+  margin-top: 120px;
+  text-align: center;
+  margin-left: 35px;
+  margin-right: 30px;
+}
+
+/*__________________________*/
+/*Logos*/
+.container-fluid6 {
+  width: 100%;
+}
+
+.container-fluid6__img {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+
+/*____________________________________________*/
+/*Galeria de imagenes*/
+.container-fluid7 {
+  width: 100%;
+}
+
+.container-fluid7__galeria__img1 {
+  height: 700px;
+  width: 800px;
+}
+
+.container-fluid7__galeria__img2 {
+  width: 100%;
+  height: 350px;
+}
+
+.container-fluid7__galeria__img3 {
+  margin-bottom: 10px;
+  height: 325px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.container-fluid7__galeria__img4 {
+  width: 100%;
+}
+
+.container-fluid7__galeria__img5 {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.container-fluid7__galeria:hover {
+  opacity: 50%;
+}
+
+/*____________________________________________*/
+/*Cards titulo-subtitulo Longboard*/
+.container-fluid8 {
+  width: 100%;
+  text-align: center;
+}
+
+.container-fluid8__titulol {
+  font-size: 50px;
+  font-weight: 900;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  margin-left: 25px;
+  font-style: italic;
+  color: #211313;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: entradaizq;
+          animation-name: entradaizq;
+  overflow: hidden;
+}
+
+.container-fluid9 {
+  width: 100%;
+}
+
+.container-fluid9__subtl {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*____________________________________________*/
+/*Cards Longboard*/
+.container-fluid10 {
+  width: 100%;
+}
+
+.cart {
+  background-color: #212121;
+  color: white;
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 900;
+  width: 100%;
+  height: 39px;
+  padding-top: 9px;
+  -webkit-box-shadow: 0px 5px 10px #212121;
+          box-shadow: 0px 5px 10px #212121;
+}
+
+.card {
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding-bottom: 10px;
+  width: 80%;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: entradacard;
+          animation-name: entradacard;
+  overflow: hidden;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 80px;
+}
+
+.card-title {
+  font-size: 12px;
+  text-align: center;
+  margin: 2px 3px;
+}
+
+.card-text {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 9px;
+  font-weight: 600;
+}
+
+.card-body {
+  width: 100%;
+}
+
+.img-thumbnail {
+  border: none;
+  height: 230px;
+  width: 120px;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+@-webkit-keyframes entradacard {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 400px, 0);
+    transform: translate3d(0, 400px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes entradacard {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 400px, 0);
+    transform: translate3d(0, 400px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate__entradacard {
+  -webkit-animation-name: entradacard;
+  animation-name: entradacard;
+}
+
+@-webkit-keyframes entradaizq {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes entradaizq {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.zoom {
+  -webkit-transition: -webkit-transform .8s;
+  transition: -webkit-transform .8s;
+  transition: transform .8s;
+  transition: transform .8s, -webkit-transform .8s;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+/*____________________________________________*/
+/*Cards titulo-subtitulo Skaters*/
+.container-fluid11 {
+  width: 100%;
+}
+
+.container-fluid11__titulosk {
+  font-size: 50px;
+  font-weight: 900;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  margin-left: 25px;
+  font-style: italic;
+  color: #211313;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: entradaizq;
+          animation-name: entradaizq;
+  overflow: hidden;
+}
+
+.container-fluid12 {
+  width: 100%;
+}
+
+/*____________________________________________*/
+/*Cards Skaters*/
+.container-fluid13 {
+  width: 100%;
+}
+
+/*____________________________________________*/
+/*Footer*/
+footer {
+  background: #292929;
+  height: 60vh;
+  width: 100%;
+  height: 50%;
+  color: grey;
+}
+
+footer .logo-footer {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  height: 35px;
+  width: 35px;
+}
+
+footer .footer-p {
+  font-size: 13px;
+}
+
+footer .lista-footer {
+  margin-bottom: 20px;
+  margin-left: 25px;
+  position: relative;
+}
+
+footer ul li a {
+  color: grey;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 43px;
+  font-size: 13px;
+  padding: 7px 30px;
+  line-height: 47px;
+}
+
+footer .btn-footer:hover {
+  text-decoration: none;
+}
+
+footer .txt-footer {
+  text-decoration: none;
+  list-style: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #f5f5f5 !important;
+}
+
+footer .social-face {
+  width: 35px;
+  height: 35px;
+}
+
+footer .social-insta {
+  width: 35px;
+  height: 35px;
+}
+
+footer .social-twit {
+  width: 35px;
+  height: 35px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 10px;
+  padding-left: 10px;
+  font-style: italic;
+}
+
+:-ms-input-placeholder {
+  font-size: 10px;
+  padding-left: 10px;
+  font-style: italic;
+}
+
+::-ms-input-placeholder {
+  font-size: 10px;
+  padding-left: 10px;
+  font-style: italic;
+}
+
+::placeholder {
+  font-size: 10px;
+  padding-left: 10px;
+  font-style: italic;
+}
+
+/*__________________________________________*/
+/*PAGINAS*/
+.container-fluid1 {
+  width: 100%;
+}
+
+.container-fluid1__tituloSk {
+  margin-top: 100px;
+  font-size: 50px;
+  margin-left: 40px;
+  font-weight: 700;
+}
+
+/*___________________*/
+/* Registrarse*/
+.contact-form {
+  background: tomato;
+  margin-top: 10%;
+  margin-bottom: 220px;
+  width: 70%;
+}
+
+.contact-form.form-control {
+  border-radius: 1rem;
+}
+
+.contact-form-form form {
+  padding: 14%;
+}
+
+.contact-form-form form .row {
+  margin-bottom: 10%;
+}
+
+.contact-form-form h3 {
+  margin-bottom: 8%;
+  margin-top: -10%;
+  text-align: center;
+  color: #97858D;
+}
+
+.contact-form-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #dc3545;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btnContactSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+
+/*___________________*/
+/* Suscripcion*/
+.newsletter-subscribe {
+  color: #313437;
+  background-color: #fff;
+  padding: 100px 100px;
+}
+
+.newsletter-subscribe p {
+  color: #7d8285;
+  line-height: 1.5;
+}
+
+.newsletter-subscribe h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  padding-top: 0;
+  margin-top: 0;
+  color: inherit;
+}
+
+.newsletter-subscribe.intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 25px;
+}
+
+.newsletter-subscribe.intro p {
+  margin-bottom: 35px;
+}
+
+.newsletter-subscribe form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.newsletter-subscribe form .form-control {
+  background: #eff1f4;
+  border: none;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  color: inherit;
+  text-indent: 9px;
+  height: 45px;
+  margin-right: 10px;
+  min-width: 250px;
+}
+
+.newsletter-subscribe form .btn {
+  padding: 16px 32px;
+  border: none;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+}
+
+.newsletter-subscribe form .btn:hover {
+  opacity: 1;
+}
+
+.newsletter-subscribe form .btn:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.newsletter-subscribe form .btn-primary {
+  background-color: #055ada !important;
+  color: #fff;
+  outline: none !important;
+}
+
+/*_______________________________*/
+/* Inicio de sesion*/
+#login.container.row.column.box {
+  margin-top: 150px;
+  margin-bottom: 200px;
+  max-width: 600px;
+  height: 320px;
+  border: 1px solid black;
+  background-color: white;
+  padding: 20px;
+}
+
+#login.container.form {
+  padding: 20px;
+  margin-top: -85px;
+}
+
+.btn {
+  border: 1px solid black;
+}
+/*# sourceMappingURL=estilos.css.map */
