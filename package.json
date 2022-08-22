@@ -1,0 +1,33 @@
+{
+  "name": "dw-23500-tb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TamaBuffa/DW-23500-TB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TamaBuffa/DW-23500-TB/issues"
+  },
+  "homepage": "https://github.com/TamaBuffa/DW-23500-TB#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.1.3",
+    "g": "^2.0.1",
+    "saas": "^1.0.0",
+    "sass": "^1.47.0"
+  }
+}
